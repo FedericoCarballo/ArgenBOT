@@ -1,0 +1,23 @@
+.logo-header {
+    height: 7rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.h1-logo {
+    font-size: 1.5rem;
+}
+
+.items-header a {
+    text-decoration: none;
+}
