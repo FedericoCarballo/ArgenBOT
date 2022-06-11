@@ -7,7 +7,7 @@ while (cont < 3) {
     let contrasena = prompt("Introduzca su contraseña");
 
     if (usuario == 'ganimedes2q@gmail.com' && contrasena == "123456") {
-        alert("Bienvenido a ArgenBot.");
+        alert("Bienvenido a SCARLETT - Delicias Finas.");
         cont = 0;
         break;
 
