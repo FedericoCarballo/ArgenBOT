@@ -1,26 +1,108 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
-.logo-header {
-  height: 7rem;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0 0 1rem;
+  transition: 0.7s;
+  z-index: 1;
 }
 
-.header-container {
+.navbar {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  background-color: transparent;
 }
 
-.logo-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.h1-logo {
-  font-size: 1.5rem;
-}
-
-.items-header a {
+.navbar li a {
   text-decoration: none;
+  color: #fff;
+  transition: 0.7s;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.navbar li a:hover {
+  color: rgb(227, 130, 211);
+}
+
+.logo {
+  margin-right: 50px;
+  transition: 1.5s;
+}
+
+.navbar a img {
+  width: 300px;
+  height: 86px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#toggler, .navbar label {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+}
+.zona1 {
+  background: url(https://scarlett.com.ar/wp-content/uploads/2021/03/DSC4943-1-scaled.jpg);
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.zona1:before {
+  content: "";
+  width: 100%;
+  min-height: 60vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #000000, #815c8b);
+  opacity: 0.6;
+}
+
+header.abajo {
+  background: #fff;
+  padding: 15px 20px;
+}
+
+header.abajo .logo,
+header.abajo ul li a {
+  color: #000;
 }
 
 * {
@@ -30,261 +112,218 @@
   -webkit-box-sizing: border-box;
 }
 
-/* BASIC */
-a {
-  color: #92badd;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-h2 {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  display: inline-block;
-  margin: 40px 8px 10px 8px;
-  color: #cccccc;
-}
-
-/* STRUCTURE */
 .wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 20px;
-}
-
-#formContent {
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
-  background: #fff;
-  padding: 30px;
-  width: 90%;
-  max-width: 450px;
+  width: 260px;
+  height: 400px;
+  background: linear-gradient(#ffffff, #ae94b5);
+  margin: auto;
   position: relative;
-  padding: 0px;
-  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-
-#formFooter {
-  background-color: #f6f6f6;
-  border-top: 1px solid #dce8f1;
-  padding: 25px;
-  text-align: center;
-  -webkit-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
-}
-
-/* TABS */
-h2.inactive {
-  color: #cccccc;
-}
-
-h2.active {
-  color: #0d0d0d;
-  border-bottom: 2px solid #5fbae9;
-}
-
-/* FORM TYPOGRAPHY*/
-input[type=button], input[type=submit], input[type=reset] {
-  background-color: #56baed;
-  border: none;
-  color: white;
-  padding: 15px 80px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 13px;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
-  box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  margin: 5px 20px 40px 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
-  background-color: #39ace7;
-}
-
-input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
-  -moz-transform: scale(0.95);
-  -webkit-transform: scale(0.95);
-  -o-transform: scale(0.95);
-  -ms-transform: scale(0.95);
+  overflow: hidden;
+  border-radius: 0.2rem;
   transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
 }
-
-input[type=text] {
-  background-color: #f6f6f6;
-  border: none;
-  color: #0d0d0d;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 5px;
-  width: 85%;
-  border: 2px solid #f6f6f6;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
+.wrapper:hover {
+  transform: scale(1);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
 }
-
-input[type=text]:focus {
-  background-color: #fff;
-  border-bottom: 2px solid #5fbae9;
-}
-
-input[type=text]:placeholder {
-  color: #cccccc;
-}
-
-/* ANIMATIONS */
-/* Simple CSS3 Fade-in-down Animation */
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-/* Simple CSS3 Fade-in Animation */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.fadeIn {
-  opacity: 0;
-  -webkit-animation: fadeIn ease-in 1;
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  animation-duration: 1s;
-}
-
-.fadeIn.first {
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
-.fadeIn.second {
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-
-.fadeIn.third {
-  -webkit-animation-delay: 0.8s;
-  -moz-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-
-.fadeIn.fourth {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-/* Simple CSS3 Fade-in Animation */
-.underlineHover:after {
-  display: block;
-  left: 0;
-  bottom: -10px;
-  width: 0;
-  height: 2px;
-  background-color: #56baed;
-  content: "";
-  transition: width 0.2s;
-}
-
-.underlineHover:hover {
-  color: #0d0d0d;
-}
-
-.underlineHover:hover:after {
+.wrapper .container {
   width: 100%;
+  height: 100%;
+}
+.wrapper .container .top {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/torta-brownie.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .top2 {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/TORTAS-WEB-10-300x300-removebg-preview.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .top3 {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/TORTAS-WEB-25-300x300-removebg-preview.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .top4 {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/TORTAS-WEB-29-300x300-removebg-preview.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .top5 {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/TORTAS-WEB-30-300x300-removebg-preview.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .top6 {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/MINI-CAKES-WEB-12-300x300-removebg-preview.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .top7 {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/TORTAS-WEB_Mesa-de-trabajo-1-300x300-removebg-preview.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .top8 {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/TORTAS-WEB-32-300x300-removebg-preview.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .top9 {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/TORTAS-WEB-06-300x300-removebg-preview.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .top10 {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/TORTAS-WEB-28-300x300-removebg-preview.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .top11 {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/TORTAS-WEB-04-300x300-removebg-preview.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .top12 {
+  height: 80%;
+  width: 100%;
+  background: transparent;
+  background: url(../../multimedia/TORTAS-WEB-08-300x300-removebg-preview.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+.wrapper .container .bottom {
+  width: 200%;
+  height: 20%;
+  transition: transform 0.5s;
+}
+.wrapper .container .bottom.clicked {
+  transform: translateX(-50%);
+}
+.wrapper .container .bottom h1 {
+  margin: 0;
+  padding: 0;
+}
+.wrapper .container .bottom p {
+  margin: 0;
+  padding: 0;
+}
+.wrapper .container .bottom .left {
+  height: 100%;
+  width: 50%;
+  background: #f4f4f4;
+  position: relative;
+  float: left;
+}
+.wrapper .container .bottom .left .details {
+  padding: 10px;
+  float: left;
+  width: calc(70% - 10px);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.93rem;
+}
+.wrapper .container .bottom .left .buy {
+  float: right;
+  width: calc(30% - 2px);
+  height: 100%;
+  background: #f1f1f1;
+  transition: 0.5s;
+  border-left: solid thin rgba(150, 40, 130, 0.1);
+}
+.wrapper .container .bottom .left .buy i {
+  font-size: 30px;
+  padding: 35px;
+  color: #254053;
+  transition: transform 0.5s;
+}
+.wrapper .container .bottom .left .buy:hover {
+  background: #A6CDDE;
+}
+.wrapper .container .bottom .left .buy:hover i {
+  transform: translateY(5px);
+  color: #00394B;
 }
 
-/* OTHERS */
-*:focus {
-  outline: none;
+.section-1 {
+  display: flex;
+  justify-content: space-around;
+  min-height: 50vh;
+  margin: auto;
+  max-width: 70rem;
 }
 
-#icon {
-  width: 60%;
+.titulo-tortas {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
 }
 
-* {
-  box-sizing: border-box;
+.hr-tortas {
+  width: 5rem;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

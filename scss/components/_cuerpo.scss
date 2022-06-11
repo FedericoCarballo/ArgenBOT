@@ -1,0 +1,215 @@
+.wrapper{
+    width: 260px;
+    height: 400px;
+    background: linear-gradient(#ffffff, #ae94b5);
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.2rem;
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+    &:hover{
+      transform: scale(1);
+      box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+    }
+    
+    .container{
+      width:100%;
+      height:100%;
+      .top{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/torta-brownie.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .top2{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/TORTAS-WEB-10-300x300-removebg-preview.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .top3{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/TORTAS-WEB-25-300x300-removebg-preview.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .top4{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/TORTAS-WEB-29-300x300-removebg-preview.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .top5{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/TORTAS-WEB-30-300x300-removebg-preview.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .top6{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/MINI-CAKES-WEB-12-300x300-removebg-preview.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .top7{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/TORTAS-WEB_Mesa-de-trabajo-1-300x300-removebg-preview.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .top8{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/TORTAS-WEB-32-300x300-removebg-preview.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .top9{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/TORTAS-WEB-06-300x300-removebg-preview.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .top10{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/TORTAS-WEB-28-300x300-removebg-preview.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .top11{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/TORTAS-WEB-04-300x300-removebg-preview.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .top12{
+        height: 80%;
+        width:100%;
+        background: transparent;
+        background: url(../../multimedia/TORTAS-WEB-08-300x300-removebg-preview.png) no-repeat center center; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+      }
+      .bottom{
+        width: 200%;
+        height: 20%;
+        transition: transform 0.5s;
+        &.clicked{
+          transform: translateX(-50%);
+        }
+        h1{
+            margin:0;
+            padding:0;
+        }
+        p{
+            margin:0;
+            padding:0;
+        }
+        .left{
+          height:100%;
+          width: 50%;
+          background: #f4f4f4;
+          position:relative;
+          float:left;
+          .details{
+            padding: 10px;
+            float: left;
+            width: calc(70% - 10px);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.93rem;
+          }
+          .buy{
+            float:right;
+            width: calc(30% - 2px);
+            height:100%;
+            background: #f1f1f1;
+            transition: 0.5s;
+            border-left:solid thin rgba(150, 40, 130, 0.1);
+            i{
+              font-size:30px;
+              padding:35px;
+              color: #254053;
+              transition: transform 0.5s;
+            }
+            &:hover{
+              background: #A6CDDE;
+            }
+            &:hover i{
+              transform: translateY(5px);
+              color:#00394B;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-1 {
+    display: flex;
+    justify-content: space-around;
+    min-height: 50vh;
+    margin: auto;
+    max-width: 70rem;
+  }
+
+  .titulo-tortas {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+  }
+
+.hr-tortas {
+    width: 5rem;
+    margin: auto;
+}
+
