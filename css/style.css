@@ -28,7 +28,7 @@ header {
 }
 
 .navbar li a:hover {
-  color: rgb(227, 130, 211);
+  color: #e382d3;
 }
 
 .logo {
@@ -51,11 +51,19 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 971px) {
   .menu {
     width: 100%;
     max-height: 0;
     overflow: hidden;
+  }
+
+  .navbar a img {
+    margin-left: 1rem;
+  }
+
+  .menu-hamburger {
+    width: 2rem;
   }
 
   .list {
@@ -97,7 +105,7 @@ header {
 
 header.abajo {
   background: #fff;
-  padding: 15px 20px;
+  padding: 15px 10px;
 }
 
 header.abajo .logo,
@@ -497,6 +505,53 @@ header.abajo ul li a {
 .hr-tortas {
   width: 5rem;
   margin: auto;
+}
+
+footer {
+  background-color: #E7E7E7;
+}
+
+.redes-sociales {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.redes-sociales img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0 0 20px;
+}
+
+.secciones-footer ul {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.secciones-footer ul li a {
+  font-size: 1rem;
+  opacity: 0.7;
+  transition: 0.7s;
+  text-decoration: none;
+  color: #6F7071;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.secciones-footer ul li a:hover {
+  color: #e382d3;
+}
+
+.copyright {
+  padding-bottom: 2rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 1.1rem;
+  color: #aaa;
 }
 
 /*# sourceMappingURL=style.css.map */
