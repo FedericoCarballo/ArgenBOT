@@ -1,4 +1,5 @@
 const DESCUENTOPRIMERACOMPRA = 20;
+
 function Producto(nombre, stock, precio, descuento) {
     this.nombre = nombre
     this.stock = stock
