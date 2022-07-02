@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- JAVASCRIPT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="js/variables.js"></script>
     <script src="js/registro.js"></script>
     <script defer src="js/header.js"></script>
@@ -30,7 +31,7 @@
         <label for="toggler"><img class="menu-hamburger" src="multimedia/menu.png" alt=""></label>
         <div class="menu">
           <ul class="list">
-            <li><a href="">Tienda +</a></li>
+            <li><a href="index.html">Tienda +</a></li>
             <li><a href="">Nosotros</a></li>
             <li><a href="">Contacto</a></li>
             <li><a href="logueo.html">Tus compras: $0.00</a></li>
@@ -51,13 +52,13 @@
       <div class='input-fields'>
 
 
-        <input id= "nombre-registro" type='text' placeholder='Nombre y apellido' class='input-line full-width'></input>
-        <input id= "usuario-registro" type='text' placeholder='Nombre de usuario' class='input-line full-width'></input>
-        <input id = "email-registro" type='email' placeholder='Email' class='input-line full-width'></input>
-        <input id = "password-registro" type='password' placeholder='Contraseña' class='input-line full-width'></input>
+        <input id= "nombre-registro" type='text' placeholder='Nombre y apellido' class='input-line full-width' required></input>
+        <input id= "usuario-registro" type='text' placeholder='Nombre de usuario' class='input-line full-width' required></input>
+        <input id = "email-registro" type='email' placeholder='Email' class='input-line full-width' required></input>
+        <input id = "password-registro" type='password' placeholder='Contraseña' class='input-line full-width' required></input>
       </div>
       <div class='spacing'>Tenes una cuenta? <a href="logueo.html" class='highlight'>Inicia sesion</a></div>
-      <input id = "submit" class="ghost-round full-width" type="submit" value="Comencemos" />
+      <input id ="submit" class="ghost-round full-width" type="submit" value="Comencemos" />
     </div>
   </div>
 </div>

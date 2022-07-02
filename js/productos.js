@@ -17,6 +17,8 @@ const productos = producto.filter((el) => {return el.nombre.includes("Bauhaus")}
 //const productos2 = producto.filter((el) => el.nombre < 2200)
 console.log(productos)
 
+
 let tortaFavorita = prompt("Ingrese su torta favorita");
 let torta = producto.find ((el) => {return el.nombre == tortaFavorita})
-console.log(torta);
+Swal.fire('Ingresaste la torta ' + tortaFavorita + " .Stock disponible");
+
