@@ -20,5 +20,11 @@ console.log(productos)
 
 let tortaFavorita = prompt("Ingrese su torta favorita");
 let torta = producto.find ((el) => {return el.nombre == tortaFavorita})
+
+if (tortaFavorita == "Bauhaus") {
 Swal.fire('Ingresaste la torta ' + tortaFavorita + " .Stock disponible");
+} else if (tortaFavorita != "Bauhauss") {
+    Swal.fire("No tenemos stock de la torta " + tortaFavorita + " . Vuelve mas tarde!");
+}
+
 
