@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 header {
   position: fixed;
   top: 0;
@@ -294,7 +294,7 @@ header.abajo ul li a {
 }
 
 .wrapper {
-  width: 259px;
+  width: 350px;
   height: 400px;
   background: linear-gradient(#ffffff, #ae94b5);
   margin: auto;
@@ -316,129 +316,20 @@ header.abajo ul li a {
   height: 80%;
   width: 100%;
   background: transparent;
-  background: url(../../multimedia/torta-brownie.png) no-repeat center center;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
 }
-.wrapper .container .top2 {
-  height: 80%;
-  width: 100%;
-  background: transparent;
-  background: url(../../multimedia/TORTAS-WEB-10-300x300-removebg-preview.png) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-}
-.wrapper .container .top3 {
-  height: 80%;
-  width: 100%;
-  background: transparent;
-  background: url(../../multimedia/TORTAS-WEB-25-300x300-removebg-preview.png) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-}
-.wrapper .container .top4 {
-  height: 80%;
-  width: 100%;
-  background: transparent;
-  background: url(../../multimedia/TORTAS-WEB-29-300x300-removebg-preview.png) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-}
-.wrapper .container .top5 {
-  height: 80%;
-  width: 100%;
-  background: transparent;
-  background: url(../../multimedia/TORTAS-WEB-30-300x300-removebg-preview.png) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-}
-.wrapper .container .top6 {
-  height: 80%;
-  width: 100%;
-  background: transparent;
-  background: url(../../multimedia/MINI-CAKES-WEB-12-300x300-removebg-preview.png) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-}
-.wrapper .container .top7 {
-  height: 80%;
-  width: 100%;
-  background: transparent;
-  background: url(../../multimedia/TORTAS-WEB_Mesa-de-trabajo-1-300x300-removebg-preview.png) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-}
-.wrapper .container .top8 {
-  height: 80%;
-  width: 100%;
-  background: transparent;
-  background: url(../../multimedia/TORTAS-WEB-32-300x300-removebg-preview.png) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-}
-.wrapper .container .top9 {
-  height: 80%;
-  width: 100%;
-  background: transparent;
-  background: url(../../multimedia/TORTAS-WEB-06-300x300-removebg-preview.png) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-}
-.wrapper .container .top10 {
-  height: 80%;
-  width: 100%;
-  background: transparent;
-  background: url(../../multimedia/TORTAS-WEB-28-300x300-removebg-preview.png) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-}
-.wrapper .container .top11 {
-  height: 80%;
-  width: 100%;
-  background: transparent;
-  background: url(../../multimedia/TORTAS-WEB-04-300x300-removebg-preview.png) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-}
-.wrapper .container .top12 {
-  height: 80%;
-  width: 100%;
-  background: transparent;
-  background: url(../../multimedia/TORTAS-WEB-08-300x300-removebg-preview.png) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+.wrapper .container .boton {
+  border: none;
+  padding: 1.4rem;
+  background-color: transparent;
 }
 .wrapper .container .bottom {
   width: 200%;
   height: 20%;
   transition: transform 0.5s;
-}
-.wrapper .container .bottom.clicked {
-  transform: translateX(-50%);
 }
 .wrapper .container .bottom h1 {
   margin: 0;
@@ -451,6 +342,7 @@ header.abajo ul li a {
 .wrapper .container .bottom .left {
   height: 100%;
   width: 50%;
+  border-radius: 4px;
   background: #f4f4f4;
   position: relative;
   float: left;
@@ -460,8 +352,7 @@ header.abajo ul li a {
   float: left;
   width: calc(70% - 10px);
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 0.93rem;
+  font-size: 1.2rem;
 }
 .wrapper .container .bottom .left .buy {
   float: right;

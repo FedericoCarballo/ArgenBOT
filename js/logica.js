@@ -14,3 +14,5 @@ function Producto(nombre, stock, precio, descuento) {
         this.stock = this.stock - unidades
     }
 }
+
+
