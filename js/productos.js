@@ -36,7 +36,7 @@ const pintarCards = data => {
 
 
 const addCarrito = e => {
-    if (e.target.classList.contains('boton')) {
+    if (e.target.classList.contains('carrito-compras')) {
         console.log(e.target.dataset.id)
         console.log(e.target.parentElement)
         setCarrito(e.target.parentElement)
@@ -86,7 +86,7 @@ const pintarFooter = () => {
     
     if (Object.keys(carrito).length === 0) {
         footer.innerHTML = `
-        <th scope="row" colspan="5">Carrito vacío</th>
+        <th scope="row" colspan="5">Carrito vacio</th>
         `
         return
     }
@@ -109,8 +109,7 @@ const pintarFooter = () => {
         carrito = {}
         pintarCarrito()
     })
-
-}
+    }
 
 const btnAumentarDisminuir = e => {
     console.log(e.target.classList.contains('btn-info'))

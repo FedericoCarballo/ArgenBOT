@@ -1,86 +1,10 @@
-.wrapper{
-    width: 350px;
-    height: 400px;
-    background: linear-gradient(#ffffff, #ae94b5);
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.2rem;
-    transform: scale(0.95);
-    transition: box-shadow 0.5s, transform 0.5s;
-    &:hover{
-      transform: scale(1);
-      box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
-    }
-    
-    .container{
-      width:100%;
-      height:100%;
-      .top{
-        height: 80%;
-        width:100%;
-        background: transparent;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-      }
-      .boton {
-        border: none;
-        padding: 1.4rem;
-        background-color: transparent;
-      }
-      .bottom{
-        width: 200%;
-        height: 20%;
-        transition: transform 0.5s;
-        h1{
-            margin:0;
-            padding:0;
-        }
-        p{
-            margin:0;
-            padding:0;
-        }
-        .left{
-          height:100%;
-          width: 50%;
-          border-radius: 4px;
-          background: #f4f4f4;
-          position:relative;
-          float:left;
-          .details{
-            padding: 10px;
-            float: left;
-            width: calc(70% - 10px);
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.2rem;
-          }
-          .buy{
-            float:right;
-            width: calc(30% - 2px);
-            height:100%;
-            background: #f1f1f1;
-            transition: 0.5s;
-            border-left:solid thin rgba(150, 40, 130, 0.1);
-            i{
-              font-size:30px;
-              padding:35px;
-              color: #254053;
-              transition: transform 0.5s;
-            }
-            &:hover{
-              background: #A6CDDE;
-            }
-            &:hover i{
-              transform: translateY(5px);
-              color:#00394B;
-            }
-          }
-        }
-      }
-    }
-  }
+.container {
+  width: 100%;
+    padding-right: 15px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
   .section-1 {
     display: flex;
@@ -104,3 +28,62 @@
     margin: auto;
 }
 
+.caja-producto {
+  width: 300px;
+  border: 1px solid rgb(216, 211, 211);
+  border-radius: 5px;
+}
+
+.detalles-torta {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  h5 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+button {
+  background-color: transparent;
+}
+.carrito-compras {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid rgb(223, 218, 218);
+  border-radius: 4px;
+  color: black;
+}
+
+.carrito-compras:hover {
+  font-weight: 600;
+  transition: 0.2s ease;
+  text-decoration: none;
+  color: #e382d3;
+}
+
+.carrito__icon {
+  cursor: pointer;
+}
+
+.carrito__icon i {
+  font-size: 2rem;
+  color: #e382d3;
+}
+
+.carrito__icon span {
+  position: relative;
+  top: -1rem;
+  font-size: 1.5rem;
+  border-radius: 100%;
+}
+
+.header-abajo .carrito__icon span {
+  color: rgb(252, 252, 252);
+}

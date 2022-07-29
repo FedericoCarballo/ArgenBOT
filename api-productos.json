@@ -2,7 +2,7 @@
     {
       "precio": 4100,
       "id": 1,
-      "title": "Brownie",
+      "title": "Brownie 4457",
       "imagendelproducto": "https://media.discordapp.net/attachments/765787078399098880/995576719027208253/torta-brownie.png"
     },
     {
@@ -14,7 +14,7 @@
     {
       "precio": 4500,
       "id": 3,
-      "title": "Cheesecake",
+      "title": "Chococheesecake",
       "imagendelproducto": "https://media.discordapp.net/attachments/765787078399098880/995576656032964628/TORTAS-WEB-32-300x300-removebg-preview.png"
     },
     {
@@ -26,7 +26,7 @@
     {
       "precio": 440,
       "id": 5,
-      "title": "BauhausSM",
+      "title": "Minicake Bauhaus",
       "imagendelproducto": "https://cdn.discordapp.com/attachments/765787078399098880/995576719362756648/MINI-CAKES-WEB-12-300x300-removebg-preview.png"
     },
     {
@@ -56,7 +56,7 @@
     {
         "precio": 4500,
         "id": 10,
-        "title": "Chocotorta X",
+        "title": "Chocotorta 2.0",
         "imagendelproducto": "https://media.discordapp.net/attachments/765787078399098880/995576656242675783/TORTAS-WEB-04-300x300-removebg-preview.png"
     },
     {
